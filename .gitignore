@@ -1,23 +1,43 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore Node.js dependencies
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore any built or compiled files
+/build/
+/dist/
 
-# testing
-/coverage
+# Ignore any local environment files
+.env
 
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Ignore any logs or temporary files
+logs/
+*.log
+*.log.*
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# Ignore any user-specific files or directories
+.idea/
+.vscode/
+
+# Ignore any editor-specific files
+*.swp
+*.swo
+*.swx
+*~
+
+# Ignore any package-lock.json files for npm
+package-lock.json
+
+# Ignore any sensitive or private files
+config.js
+database.json
+
+# Ignore any cache or compiled files
+.cache/
+.DS_Store
+
+# Ignore any backup files
+*.bak
+
+# Ignore any operating system files
+Thumbs.db
+Desktop.ini
